@@ -23,3 +23,14 @@
         font-size: 2rem;
     }
 }
+.brandicon {
+    &:hover {
+        filter: invert(4%) sepia(1%) saturate(6271%) hue-rotate(182deg) brightness(70%) contrast(100%) !important;
+    }
+}
+.ghbrandicon {
+    filter: invert(99%) sepia(0%) saturate(224%) hue-rotate(22deg) brightness(115%) contrast(100%) !important;
+    &:hover {
+        filter: invert(96%) sepia(1%) saturate(6271%) hue-rotate(182deg) brightness(70%) contrast(100%) !important;
+    }
+}
