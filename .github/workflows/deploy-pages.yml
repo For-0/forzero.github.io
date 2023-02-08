@@ -35,7 +35,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.16.0
+          registry-url: https://npm.pkg.github.com/
       - run: npm ci && npm run build
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GPR_PAT }}
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
